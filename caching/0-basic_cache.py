@@ -9,7 +9,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 class BasicCache(BaseCaching):
     """ Define BasicCache """
 
-    def put(self, item, key):
+    def put(self, key, item):
         """ Add key/value pair to the cache """
         if key is None and item is None:
             return
